@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="fill_parent"
+tools:context="br.com.davidlemos.ezpointmobile.DigitarNomeDaEmpresa"
+android:gravity="center_vertical"
+android:orientation="vertical"
+android:background="#EFEFEF"
+>
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/eTNomeDaEmpresa"
+        android:hint="Digite o nome da sua empresa"
+        android:background="@drawable/textview"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:text="AVANÇAR"
+    android:id="@+id/btAvancar"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/botaoverde"
+    android:layout_margin="10pt"
+    android:textColor="@color/branco"
+    />
+</LinearLayout>
+

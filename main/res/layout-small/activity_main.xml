@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="br.com.davidlemos.ezpointmobile.MainActivity"
+    android:background="#EFEFEF"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Bem-vindo ao Registrador de Ponto EzPoint Mobile!"
+            android:id="@+id/textView2"
+            android:textColor="@color/azulescuro"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="CRIAR CONTA"
+            android:id="@+id/btCriarConta"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/botaoverde"
+            android:layout_marginTop="20pt"
+            android:layout_marginBottom="10pt"
+            android:textColor="@color/branco"
+            />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="JÁ POSSUO CONTA"
+            android:id="@+id/btPossuoConta"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/botaoazul"
+            android:textColor="@color/branco"
+        />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Saiba mais sobre o Ezpoint mobile"
+            android:id="@+id/btSaibaMais"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/botaoazulescuro"
+            android:textColor="@color/branco"
+            android:layout_marginTop="20pt"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Para gerenciar seu ponto acesse www.ezpoint.com.br"
+            android:id="@+id/textView3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
+

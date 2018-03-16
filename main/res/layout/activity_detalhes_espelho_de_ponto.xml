@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="br.com.davidlemos.ezpointmobile.MostrarDetalhesEspelhoDePonto"
+    android:background="#EFEFEF"
+    android:id="@+id/details_espelho_ponto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:textColor="@color/branco"
+        android:textSize="24dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <!-- height 25% -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cinza"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/img_clock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_whiteblue"
+            android:padding="10dp"
+            android:src="@drawable/ic_alarm_black_24dp" android:contentDescription="TODO" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <!-- height 50%% -->
+            <TextView
+                android:id="@+id/text_weekday"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="QUINTA-FEIRA"
+                android:textColor="@color/azulescuro"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".7"
+                android:gravity="center"
+                android:text="15/03/2018"
+                android:textColor="@color/azulescuro"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- height 50% -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="end"
+                        android:text="07:35"
+                        android:textColor="@color/azulescuro"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/second_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="end"
+                        android:text="13:21"
+                        android:textColor="@color/azulescuro"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_hifen"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:text=" - "
+                        android:textColor="@color/azulescuro"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/second_hifen"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:text=" - "
+                        android:textColor="@color/azulescuro"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="start"
+                        android:text="11:58"
+                        android:textColor="@color/azulescuro"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/second_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".6"
+                        android:gravity="start"
+                        android:text="18:00"
+                        android:textColor="@color/azulescuro"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/rectangle_whiteblue"/>
+
+    <TextView
+        android:id="@+id/header_infos"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:gravity="center"
+        android:text="Informações Detalhadas"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- height 50%% -->
+            <TextView
+                android:id="@+id/label_ch"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="Carga Horária (CH):"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_ex"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="Extra (EX):"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_en"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="Extra Noturno (EN):"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_ht"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="Horas Trabalhadas (HT):"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_hn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Horas Noturnas (HN):"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/label_at"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Atraso (AT):"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/label_fa"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Faltas (FA):"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/label_hn_normais"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Horas Noturnas + Normais:"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/label_DSR_pagar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="DSR a pagar:"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/label_DSR_extra"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="DSR sobre extra:"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- height 50%% -->
+            <TextView
+                android:id="@+id/value_ch"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_ex"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_en"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_ht"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_hn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_at"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_fa"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_hn_normais"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_DSR_pagar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_DSR_extra"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/frame"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/rectangle_whiteblue" />
+
+    <TextView
+        android:id="@+id/header_totais"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:gravity="center"
+        android:text="Totais"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- height 50%% -->
+            <TextView
+                android:id="@+id/label_DSR_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="DSR Total:"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+            <TextView
+                android:id="@+id/label_total_trabalhar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Total a Trabalhar:"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginStart="30dp" android:layout_marginEnd="0dp" />
+
+            <TextView
+                android:id="@+id/label_total_trabalhado_DSR"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="Total Trabalhado + DSR:"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="0dp" android:layout_marginStart="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- height 50%% -->
+            <TextView
+                android:id="@+id/value_DSR_total"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_total_trabalhar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+            <TextView
+                android:id="@+id/value_total_trabalhado_DSR"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" android:layout_marginEnd="20dp" android:layout_marginStart="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

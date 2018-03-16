@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+tools:context="br.com.davidlemos.ezpointmobile.GpsDesativado"
+android:orientation="vertical"
+android:layout_gravity="center_vertical">
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView"
+    android:background="@drawable/semgps"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text='Para registrar ponto,\n ative seu GPS no modo "Alta precisão"!'
+    android:id="@+id/textView"
+    android:layout_gravity="center_horizontal"
+    android:textAlignment="center"
+    android:layout_margin="10dp"/>
+
+<Button
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:text="DESEJO ATIVAR"
+    android:id="@+id/btativado"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/botaoverde"
+    android:textColor="@color/branco"
+    android:layout_margin="10dp"/>
+</LinearLayout>

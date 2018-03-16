@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title=""
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/menu_registrar_ponto"
+                android:title="@string/menu_registrar_ponto"
+                android:icon="@drawable/ic_fingerprint_black_24dp"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/menu_espelho_ponto"
+                android:title="@string/menu_espelho_de_pontos"
+                android:icon="@drawable/ic_content_paste_black_24dp"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/menu_sincronizar_ponto"
+                android:title="@string/menu_sincronizar_ponto"
+                android:icon="@drawable/ic_loop_black_24dp"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/menu_alterar_empregador"
+                android:title="@string/menu_alterar_empregador"
+                android:icon="@drawable/ic_person_black_24dp"
+                app:showAsAction="ifRoom">
+            </item>
+        </menu>
+    </item>
+</menu>

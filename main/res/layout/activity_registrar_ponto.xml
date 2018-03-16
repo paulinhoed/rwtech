@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="br.com.davidlemos.ezpointmobile.RegistrarPonto"
+    android:background="#EFEFEF">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:textColor="@color/branco"
+            android:textSize="24sp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logo2"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"/>
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:hint="Empresa"
+                android:id="@+id/tvNomeEmpresa"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/textview"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/tvPin"
+                android:hint="PIN"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/textview"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:inputType="textPassword"/>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TableRow android:layout_width="wrap_content"
+                          android:layout_gravity="center_horizontal">
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:id="@+id/bt1"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:id="@+id/bt2"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:id="@+id/bt3"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:id="@+id/bt4"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:id="@+id/bt5"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:id="@+id/bt6"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:id="@+id/bt7"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:id="@+id/bt8"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:id="@+id/bt9"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_column="2"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/bt0"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_marginRight="10dp"
+                        />
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Limpar"
+                        android:id="@+id/btlimpar"
+                        android:background="@drawable/botaoazulescuro"
+                        android:textColor="@color/branco"
+                        android:layout_span="2"/>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRAR PONTO"
+                    android:id="@+id/bt_registrar_ponto"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/botaoverde"
+                    android:textColor="@color/branco"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"/>
+                <!--<Button-->
+                    <!--android:layout_width="170dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="ALTERAR EMPREGADOR"-->
+                    <!--android:id="@+id/btAlterarEmpregador"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@drawable/botaovermelho"-->
+                    <!--android:textColor="@color/branco"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--/>-->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+

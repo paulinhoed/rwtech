@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">EzPoint Mobile</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_registrar_ponto">Registro de Ponto</string>
+    <string name="title_espelho_de_ponto">Espelho de Pontos</string>
+    <string name="title_sincronizar_ponto">Sincronizar Pontos</string>
+    <string name="title_alterar_empregador">Alterar Empregador</string>
+
+    <string name="menu_registrar_ponto">Registrar Ponto</string>
+    <string name="menu_espelho_de_pontos">Espelho de Pontos</string>
+    <string name="menu_sincronizar_ponto">Sincronizar Pontos</string>
+    <string name="menu_alterar_empregador">Alterar Empregador</string>
+
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="ok">Ok</string>
+    <string name="dialog_alterar_empregador">Você deseja realmente trocar de usuário?</string>
+    <string name="incorrect_max_date">Data Final Incorreta</string>
+    <string name="dialog_error_max_date">Não é possível inserir uma data final maior do que a data de hoje!</string>
+    <string name="incorrect_min_date">Data Inicial Incorreta</string>
+    <string name="dialog_error_min_date">Não é possível inserir uma data inicial maior do que a data de hoje!</string>
+    <string name="negative_diff_bet_dates">Data Final Menor</string>
+    <string name="dialog_error_negative_diff_bet_dates">A data final não pode ser menor do que a data inicial!</string>
+    <string name="forth_diff_bet_dates">Intervalo Irregular</string>
+    <string name="dialog_error_forth_diff_bet_dates">O intervalo entre as datas nâo pode ser maior do que 40 dias!</string>
+    <string name="title_detalhes_espelho_de_ponto">Detalhes</string>
+
+
+    <string name="pref_host_port">Port</string>
+    <string name="pref_ws_default_port">7080</string>
+    <string name="pref_ws_host">pref_ws_host</string>
+
+    <string name="pref_ws_access_token">pref_ws_access_token</string>
+    <string name="pref_ws_access_token_expiration">pref_ws_access_token_expiration</string>
+
+    <string name="pref_user_login">pref_user_login</string>
+    <string name="pref_user_password">pref_user_password</string>
+
+    <string name="pref_ws_default_username">pref_ws_default_username</string>
+    <string name="pref_ws_default_password">pref_ws_default_password</string>
+    <string name="pref_ws_default_code">pref_ws_default_code</string>
+
+    <!--URL's-->
+    <string name="pref_ws">http://186.202.64.70/EzWeb-Client/ezweb-ws/</string>
+    <string name="pref_code">AIzaSyCZrVbzG6jxaHmZDb9jkHK8jrohwyEq6aEZPOINTMOBILE</string>
+    <string name="pref_ws_msg">pcs2-exemplooauth.appspot.com</string>
+
+
+</resources>
